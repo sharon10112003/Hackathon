@@ -1,0 +1,158 @@
+
+
+/* Container for the layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+.sidebar ul li a:hover {
+    color: #ff7e5f;
+}
+
+.sidebar ul li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Main Content Area */
+.content {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Figure Container */
+.figure-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Two-column article */
+.two-column-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.article-left, .article-right {
+    width: 48%;
+} 
+     .go-home-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-home-btn:hover {
+            background-color: #45a049;
+        }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    /* For tablets and smaller screens */
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .two-column-article {
+        flex-direction: column;
+    }
+
+    .article-left, .article-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For mobile devices */
+    .sidebar ul li a {
+        font-size: 1em;
+    }
+
+    .two-column-article {
+        flex-direction: column;
+    }
+
+    .article-left, .article-right {
+        width: 100%;
+    }
+}
+
+/* Fluid Layout for Images */
+img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+} 
